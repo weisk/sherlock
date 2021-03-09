@@ -1,2 +1,8 @@
-language = "python3"
-run = ""
+language="python3"
+run="python3 sherlock --help"
+onBoot="echo Booting up!"
+
+[packagernono]
+afterInstall="date >> package_install_log"
+ignoredPaths=[".git"]
+ignoredPackages=["twitter", "discord"]
